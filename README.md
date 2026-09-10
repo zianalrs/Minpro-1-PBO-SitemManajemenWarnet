@@ -34,7 +34,7 @@ Penjelasan Alur Program
 
 Program dimulai dari class Warnet yang menjadi entry point aplikasi. Di dalamnya, dibuat satu objek KomputerService untuk mengelola data komputer dan satu objek Validasi untuk mengecek kevalidan harga, keduanya dipakai berulang kali selama program berjalan.
 
-Begitu program dijalankan, sistem langsung masuk ke perulangan while yang membuat menu utama terus tampil selama variabel penanda (lanjut) masih bernilai true. Setiap kali menu muncul, program menunggu user mengetik angka pilihan, lalu angka tersebut diproses melalui percabangan switch-case untuk menentukan aksi apa yang dijalankan. Setiap pilihan pada dasarnya hanya memanggil method yang sesuai di KomputerService — artinya class Warnet tidak menyimpan atau memanipulasi data komputer secara langsung, hanya menjembatani input user ke logic yang ada di KomputerService.
+Begitu program dijalankan, sistem langsung masuk ke perulangan while yang membuat menu utama terus tampil selama variabel penanda (lanjut) masih bernilai true. Setiap kali menu muncul, program menunggu user mengetik angka pilihan, lalu angka tersebut diproses melalui percabangan switch-case untuk menentukan aksi apa yang dijalankan. Setiap pilihan pada dasarnya hanya memanggil method yang sesuai di KomputerService, artinya class Warnet tidak menyimpan atau memanipulasi data komputer secara langsung, hanya menjembatani input user ke logic yang ada di KomputerService.
 
 Perulangan ini baru berhenti ketika user memilih menu Keluar (mengubah lanjut menjadi false), sehingga program tidak akan berhenti sendiri di tengah jalan kecuali user memang meminta keluar.
 
@@ -45,7 +45,7 @@ Perulangan ini baru berhenti ketika user memilih menu Keluar (mengubah lanjut me
 
 1. Tambah Komputer
 
-User diminta memasukkan nomor komputer, spesifikasi, dan harga per jam. Sebelum data disimpan, harga yang diinput akan dicek dulu lewat class Validasi — kalau harganya tidak lebih dari 0, data tidak akan ditambahkan dan program akan menampilkan pesan error. Jika valid, data baru dibungkus menjadi objek Komputer dan dimasukkan ke ArrayList lewat method tambah().
+User diminta memasukkan nomor komputer, spesifikasi, dan harga per jam. Sebelum data disimpan, harga yang diinput akan dicek dulu lewat class Validasi, kalau harganya tidak lebih dari 0, data tidak akan ditambahkan dan program akan menampilkan pesan error. Jika valid, data baru dibungkus menjadi objek Komputer dan dimasukkan ke ArrayList lewat method tambah().
 
 [SS Output Tambah Komputer]
 
@@ -57,7 +57,7 @@ Seluruh data komputer yang tersimpan di ArrayList akan ditampilkan satu per satu
 
 3. Ubah Data Komputer
 
-User memasukkan nomor komputer yang ingin diubah beserta spesifikasi dan harga barunya. Program akan mencari data dengan nomor tersebut di dalam ArrayList; jika ditemukan, datanya akan diperbarui, jika tidak, program menampilkan pesan bahwa data tidak ditemukan. Harga baru juga tetap melewati pengecekan Validasi sebelum diterapkan.
+User memasukkan nomor komputer yang ingin diubah beserta spesifikasi dan harga barunya. Program akan mencari data dengan nomor tersebut di dalam ArrayList, jika ditemukan, datanya akan diperbarui, jika tidak, program menampilkan pesan bahwa data tidak ditemukan. Harga baru juga tetap melewati pengecekan Validasi sebelum diterapkan.
 
 [SS Output Ubah Data Komputer]
 
