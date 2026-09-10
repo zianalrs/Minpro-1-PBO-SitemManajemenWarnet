@@ -47,40 +47,47 @@ Perulangan ini baru berhenti ketika user memilih menu Keluar (mengubah lanjut me
 
 User diminta memasukkan nomor komputer, spesifikasi, dan harga per jam. Sebelum data disimpan, harga yang diinput akan dicek dulu lewat class Validasi, kalau harganya tidak lebih dari 0, data tidak akan ditambahkan dan program akan menampilkan pesan error. Jika valid, data baru dibungkus menjadi objek Komputer dan dimasukkan ke ArrayList lewat method tambah().
 
-[SS Output Tambah Komputer]
+<img width="440" height="340" alt="image" src="https://github.com/user-attachments/assets/57635721-f5ca-4483-954c-c2f4f2f303db" />
+
 
 2. Lihat Semua Komputer
 
 Seluruh data komputer yang tersimpan di ArrayList akan ditampilkan satu per satu menggunakan perulangan for, lengkap dengan nomor, spesifikasi, harga per jam, dan status pemakaiannya. Kalau belum ada data sama sekali, program akan memberi tahu bahwa daftar komputer masih kosong.
 
-[SS Output Lihat Semua Komputer]
+<img width="485" height="376" alt="image" src="https://github.com/user-attachments/assets/ac614bb0-0e1b-4cb2-8a1a-9799aba6d023" />
+
 
 3. Ubah Data Komputer
 
 User memasukkan nomor komputer yang ingin diubah beserta spesifikasi dan harga barunya. Program akan mencari data dengan nomor tersebut di dalam ArrayList, jika ditemukan, datanya akan diperbarui, jika tidak, program menampilkan pesan bahwa data tidak ditemukan. Harga baru juga tetap melewati pengecekan Validasi sebelum diterapkan.
 
-[SS Output Ubah Data Komputer]
+<img width="457" height="343" alt="image" src="https://github.com/user-attachments/assets/02c2f9fe-d39b-4c93-9cdf-6bf022b1ac79" />
+
 
 4. Hapus Komputer
 
 User memasukkan nomor komputer yang ingin dihapus. Jika nomor tersebut ada di dalam ArrayList, datanya akan dihapus dari daftar; kalau tidak ditemukan, program memberi tahu bahwa data dengan nomor tersebut tidak ada.
 
-[SS Output Hapus Komputer]
+<img width="428" height="301" alt="image" src="https://github.com/user-attachments/assets/e248ca2d-9bb4-4d38-858e-9a17449e00a4" />
+
 
 5. Booking Komputer
 
 User memasukkan nomor komputer yang ingin dibooking. Jika komputer tersebut berstatus kosong, statusnya akan diubah menjadi dipakai. Jika komputer sudah dipakai sebelumnya, program akan memberi tahu bahwa komputer tersebut tidak tersedia, dan kalau nomornya tidak ada di daftar, program juga memberi tahu data tidak ditemukan.
 
-[SS Output Booking Komputer]
+<img width="447" height="301" alt="image" src="https://github.com/user-attachments/assets/9e9df3db-b48a-4d31-bf09-352f366ebc4d" />
+
 
 6. Kosongkan Komputer
 
 User memasukkan nomor komputer yang ingin dikosongkan kembali. Jika komputer tersebut sedang berstatus dipakai, statusnya akan diubah kembali menjadi kosong, sama seperti kondisi awal. Kalau komputernya memang sudah kosong dari awal, program memberi tahu bahwa komputer tersebut memang sedang tidak dipakai.
 
-[SS Output Kosongkan Komputer]
+<img width="475" height="302" alt="image" src="https://github.com/user-attachments/assets/7c05fc33-094d-424f-9e15-2e491c50058b" />
+
 
 7. Keluar
 
 Program akan menghentikan perulangan while dengan mengubah nilai lanjut menjadi false, sehingga aplikasi berhenti berjalan dan kembali ke sistem operasi.
 
-[SS Output Keluar Program]
+<img width="331" height="280" alt="image" src="https://github.com/user-attachments/assets/ace00958-097d-4dd9-9106-091bb31a4b75" />
+
