@@ -12,10 +12,10 @@ Struktur Program
 
 Program ini terdiri dari 4 class:
 
--Komputer, class entitas yang menyimpan data satu unit komputer (nomor, spesifikasi, harga per jam, dan status pemakaian).
--KomputerService, class yang menangani seluruh logic CRUD (tambah, lihat, ubah, hapus, booking, kosongkan) dan menyimpan data komputer dalam ArrayList.
--Validasi, class yang mengecek apakah harga per jam yang diinput valid (lebih dari 0).
--Warnet, class utama (entry point) yang berisi tampilan menu, input dari user, serta perulangan dan percabangan untuk menjalankan program.
+- Komputer, class entitas yang menyimpan data satu unit komputer (nomor, spesifikasi, harga per jam, dan status pemakaian).
+- KomputerService, class yang menangani seluruh logic CRUD (tambah, lihat, ubah, hapus, booking, kosongkan) dan menyimpan data komputer dalam ArrayList.
+- Validasi, class yang mengecek apakah harga per jam yang diinput valid (lebih dari 0).
+- Warnet, class utama (entry point) yang berisi tampilan menu, input dari user, serta perulangan dan percabangan untuk menjalankan program.
 
 ---
 
