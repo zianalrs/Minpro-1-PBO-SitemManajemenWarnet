@@ -38,7 +38,8 @@ Begitu program dijalankan, sistem langsung masuk ke perulangan while yang membua
 
 Perulangan ini baru berhenti ketika user memilih menu Keluar (mengubah lanjut menjadi false), sehingga program tidak akan berhenti sendiri di tengah jalan kecuali user memang meminta keluar.
 
-[SS Output Tampilan Menu Utama]
+[<img width="343" height="255" alt="image" src="https://github.com/user-attachments/assets/fedc9327-5203-4955-884a-2b19bf4206e9" />
+]
 
 ---
 
